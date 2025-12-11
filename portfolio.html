@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enosh Aji — Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(135deg, #1e1e2f, #2a2a40);
+            color: #fff;
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: #111;
+            border-bottom: 2px solid #444;
+            transition: background 0.3s ease;
+        }
+        header:hover {
+            background: #000;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.8rem;
+            letter-spacing: 2px;
+            transform: translateY(0);
+            transition: transform 0.4s ease;
+        }
+        header h1:hover {
+            transform: translateY(-5px);
+        }
+
+        nav {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            display: flex;
+            flex-direction: row;
+            gap: 12px;
+            background: rgba(0, 0, 0, 0.45);
+            padding: 12px 18px;
+            border-radius: 12px;
+            backdrop-filter: blur(8px);
+            box-shadow: 0 0 15px rgba(0, 234, 255, 0.3);
+        }
+        nav a {
+            width: 160px;
+            padding: 14px 0;
+            background: linear-gradient(135deg, #00eaff, #0077ff);
+            border-radius: 12px;
+            text-decoration: none;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            color: white;
+            text-align: center;
+            transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 140, 255, 0.4);
+        }
+        nav a:hover {
+            transform: translateX(-6px) scale(1.05);
+            background: linear-gradient(135deg, #00b7ff, #0056ff);
+            box-shadow: 0 6px 14px rgba(0, 170, 255, 0.6);
+        }
+        nav a:hover {
+            background: #008bb3;
+            transform: scale(1.07);
+        }
+
+        .profile {
+            text-align: center;
+            margin-top: 70px;
+        }
+        .profile img {
+            border-radius: 15px;
+            border: 4px solid #fff;
+            width: 250px;
+            height: 300px;
+            object-fit: cover;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+        .profile img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px #00eaff;
+        }
+        .profile p {
+            font-size: 1.2rem;
+            margin: 8px 0;
+        }
+
+        section {
+            width: 80%;
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 25px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            backdrop-filter: blur(8px);
+            box-shadow: 0 0 15px rgba(0,0,0,0.5);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 30px rgba(0, 238, 255, 0.4);
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            border-left: 5px solid #00eaff;
+            padding-left: 10px;
+            margin-bottom: 15px;
+        }
+
+        ul li {
+            margin-bottom: 8px;
+            transition: transform 0.2s ease;
+        }
+        ul li:hover {
+            transform: translateX(5px);
+        }
+
+        a {
+            color: #00eaff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #fff;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #111;
+            margin-top: 40px;
+            font-size: 0.9rem;
+            color: #bbb;
+            transition: background 0.3s ease;
+        }
+        footer:hover {
+            background: #000;
+        }
+    </style>
+<style>
+    .section-header {
+        margin: 20px 0;
+    }
+    .cool-btn {
+        padding: 12px 24px;
+        background: linear-gradient(135deg, #00e1ff, #0077ff);
+        color: white;
+        border: none;
+        border-radius: 12px;
+        font-size: 20px;
+        font-weight: 700;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 12px rgba(0, 140, 255, 0.4);
+    }
+    .cool-btn:hover {
+        transform: scale(1.08);
+        box-shadow: 0 6px 16px rgba(0, 170, 255, 0.6);
+    }
+</style>
+</head>
+<body>
+    <button class="cool-btn" style="margin:20px auto; display:block;">Home</button>
+    <header>
+        <h1>Enosh Aji's Portfolio</h1>
+    </header>
+
+
+
+    <div class="profile">
+        <img src="enos.jpg" alt="Enosh Aji" />
+        <p><strong>Enosh Aji</strong></p>
+        <p>Full Stack Developer</p>
+    </div>
+
+    <section id="about">
+        <div class="section-header"><button class="cool-btn">About Me</button></div>
+        <p>I am a passionate Full Stack Developer skilled in building dynamic, responsive, and scalable web applications using modern technologies. I specialize in developing end-to-end solutions — from designing powerful backends and crafting beautiful frontends to managing robust databases.</p>
+        <p>I enjoy solving real-world problems with clean code, structured architecture, and creative UI/UX.</p>
+    </section>
+
+    <section id="skills">
+        <div class="section-header"><button class="cool-btn">Technical Skills</button></div>
+        <h3>Frontend Development</h3>
+        <ul>
+            <li>HTML5, CSS3, JavaScript (ES6+)</li>
+            <li>React.js, Redux</li>
+            <li>Responsive Web Design</li>
+            <li>Tailwind CSS / Bootstrap</li>
+        </ul>
+
+        <h3>Backend Development</h3>
+        <ul>
+            <li>Python, Django, Django REST Framework</li>
+            <li>Express.js</li>
+            <li>RESTful API Design</li>
+            <li>Node.js</li>
+        </ul>
+
+        <h3>Database Management</h3>
+        <ul>
+            <li>PostgreSQL</li>
+            <li>MongoDB</li>
+            <li>MySQL</li>
+        </ul>
+
+        <h3>Version Control & Deployment</h3>
+        <ul>
+            <li>Git, GitHub</li>
+            <li>Docker</li>
+            <li>AWS, Heroku</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <div class="section-header"><button class="cool-btn">Projects</button></div>
+        <ul>
+            <li><strong>Project A:</strong> E-commerce web application with React frontend and Django backend. Includes authentication, product management, and payment integration.</li>
+            <li><strong>Project B:</strong> Real-time chat application using Node.js and Socket.io with private messaging.</li>
+            <li><strong>Project C:</strong> Blog platform built with Django CMS supporting rich media posts.</li>
+            <li><strong>Project D:</strong> Full Stack Portfolio using Django, React, MySQL with API integration.</li>
+        </ul>
+    </section>
+
+    <section id="education">
+        <div class="section-header"><button class="cool-btn">Education</button></div>
+        <p><strong>Bachelor of Technology in Computer Science and Engineering</strong></p>
+        <p>Amirtha University, 2024 - 2028</p>
+        <p>Relevant Coursework: Data Structures, Algorithms, DBMS, Web Development, Software Engineering</p>
+    </section>
+
+    <section id="experience">
+        <div class="section-header"><button class="cool-btn">Experience</button></div>
+        <p><strong>Internship at Tech Solutions Inc. (June 2023 - August 2023)</strong></p>
+        <ul>
+            <li>Developed and maintained web applications using Django and React.</li>
+            <li>Collaborated with cross-functional teams to design and implement new features.</li>
+            <li>Optimized database queries to improve performance.</li>
+        </ul>
+    </section>
+
+    <section id="certifications">
+        <div class="section-header"><button class="cool-btn">Certifications</button></div>
+        <ul>
+            <li>Full Stack Web Development - freeCodeCamp</li>
+            <li>Python for Everybody - Coursera</li>
+            <li>JavaScript Algorithms & Data Structures - freeCodeCamp</li>
+        </ul>
+    </section>
+
+    <section id="hobbies">
+        <div class="section-header"><button class="cool-btn">Hobbies & Interests & Interests</button></div>
+        <ul>
+            <li>Coding and exploring new technologies</li>
+            <li>Reading tech blogs</li>
+            <li>Playing chess</li>
+            <li>Traveling</li>
+        </ul>
+    </section>
+
+    <section id="strengths">
+        <div class="section-header"><button class="cool-btn">Strengths</button></div>
+        <ul>
+            <li>Problem-solving</li>
+            <li>Adaptability</li>
+            <li>Teamwork</li>
+            <li>Attention to detail</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <div class="section-header"><button class="cool-btn">Contact Me</button></div>
+        <p>Phone: +91 7736706420</p>
+        <p>Email: <a href="mailto:enoshaji5@gmail.com">enoshaji5@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/enosh-aji-28073334a/">linkedin.com/in/enosh-aji</a></p>
+        <p>GitHub: <a href="https://github.com/enosh06">github.com/enosh06</a></p>
+    </section>
+
+    <footer>
+        <p>© 2025 Enosh Aji — Portfolio</p>
+    </footer>
+</body>
+</html>
